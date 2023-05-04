@@ -10,6 +10,7 @@ import java.util.UUID;
 import static java.util.Objects.isNull;
 
 @Entity
+@SuppressWarnings("unused")
 @Table(name = "internal_event")
 public class InternalEvent implements Persistable<UUID> {
 

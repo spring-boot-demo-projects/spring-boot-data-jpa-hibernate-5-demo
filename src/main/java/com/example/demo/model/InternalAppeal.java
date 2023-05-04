@@ -8,6 +8,7 @@ import java.util.UUID;
 import static java.util.Objects.isNull;
 
 @Entity
+@SuppressWarnings("unused")
 @Table(name = "internal_appeal")
 public class InternalAppeal implements Persistable<UUID> {
 
