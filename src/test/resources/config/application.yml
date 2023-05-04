@@ -1,0 +1,24 @@
+### Spring ###
+spring:
+  test:
+    database:
+      replace: none
+  output:
+    ansi:
+      enabled: always
+  jpa:
+    show-sql: on
+    open-in-view: off
+    properties:
+      hibernate:
+        format_sql: on
+        highlight_sql: on
+        use_sql_comments: off
+        generate_statistics: off
+  datasource:
+    url: "jdbc:tc:postgresql:15:///"
+### Logging ###
+logging:
+  level:
+    org.springframework.test.context.transaction: warn
+    org.hibernate.type.descriptor.sql.BasicBinder: debug
